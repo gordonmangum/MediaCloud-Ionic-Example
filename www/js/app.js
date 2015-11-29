@@ -23,7 +23,7 @@ angular.module('mc', ['ionic', 'mc.controllers', 'mc.services', 'mc.config'])
 })
 
 .config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
-  
+
   $stateProvider
 
     .state('app', {
@@ -42,6 +42,13 @@ angular.module('mc', ['ionic', 'mc.controllers', 'mc.services', 'mc.config'])
         controller: 'SearchCtrl'
       }
     }
+  })
+
+  .state('twitter', {
+    cache: false,
+    url: '/twitter',
+    templateUrl: 'templates/twitter.html',
+    controller: 'TwitterCtrl'
   });
 
   // if none of the above states are matched, use this as the fallback

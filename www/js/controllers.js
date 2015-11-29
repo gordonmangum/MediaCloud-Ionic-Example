@@ -21,4 +21,8 @@ angular.module('mc.controllers', [])
   MediaCloud.recentMentions($scope.keyword);
 })
 
+.controller('TwitterCtrl', function($scope, $ionicModal, $timeout) {
+
+})
+
 ;
