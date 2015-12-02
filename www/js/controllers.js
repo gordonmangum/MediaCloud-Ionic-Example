@@ -25,4 +25,8 @@ angular.module('mc.controllers', [])
 
 })
 
+.controller('HomeCtrl', function($scope, $ionicModal, $timeout) {
+
+})
+
 ;

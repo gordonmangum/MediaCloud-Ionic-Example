@@ -44,13 +44,19 @@ angular.module('mc', ['ionic', 'mc.controllers', 'mc.services', 'mc.config'])
     }
   })
 
-  .state('twitter', {
-    cache: false,
-    url: '/twitter',
-    templateUrl: 'templates/twitter.html',
-    controller: 'TwitterCtrl'
-  });
+  //.state('twitter', {
+    //cache: false,
+    //url: '/twitter',
+    //templateUrl: 'templates/twitter.html',
+    //controller: 'TwitterCtrl'
+  //});
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/search/kittens');
+  $urlRouterProvider.otherwise('/app/search/black lives matter');
+  //$urlRouterProvider.otherwise('home', {
+    //cache: false,
+    //url: '/home',
+    //templateUrl: 'templates/home.html',
+    //controller: 'HomeCtrl'
+  //});
 });
